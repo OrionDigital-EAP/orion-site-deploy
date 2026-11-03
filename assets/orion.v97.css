@@ -251,3 +251,9 @@ main>.s:not(.first):not(:first-child),main>section:not(.first):not(:first-child)
 .rv-on .f-steps li.on strong,.rv-on .f-steps li.on span{opacity:1}
 /* "ler artigo" sobre branco: dourado um tom mais escuro para passar 4.5:1 */
 .s-white .po-big a.po-read{color:#9A6B20!important;-webkit-text-fill-color:#9A6B20!important}
+
+/* destaque do titulo em secao branca: a caixa e escura, entao o texto e claro.
+   O efeito recorta as letras da caixa; a regra geral que forca preto estava
+   anulando esse recorte e deixando preto sobre preto, sem nada legivel. */
+.s-white:not(.qx-azul) .s-h2 .hl{color:#fff!important;-webkit-text-fill-color:#fff!important}
+.s-white:not(.qx-azul) .s-h2 .hl.knock{color:transparent!important;-webkit-text-fill-color:transparent!important}
